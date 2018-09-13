@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
 <title>IMAGES</title>
 
@@ -49,9 +50,33 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+* {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.zoom {
+    padding: 50px;
+    background-image: url(bboyblur.png);
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+}
 #secondmain{width:1000px; height:50px; background-color:skyblue;border-radius: 50px}
 #mainbox{width: 950px; height: 150px;background-image: url(bananas.png);border-radius:25px; font-size:30px; }
-#bodytagger{width:800px; height:1000px; background-image: url(bananas.png);border-radius: 15px 50px; margin-top:20px; border-style: dotted; border-color:pink}
+#bodytagger{width:800px; height:1000px; background-image: url(bananas.png);border-radius: 15px 50px; margin-top:20px; border-style: dotted; border-color:pink; padding: inherit;}
 
 h1 {
   margin-top:50px;
@@ -72,16 +97,21 @@ p{
 <div id="secondmain">
 Bannnnana
 </div>
-<div id="bodytagger"> <p>I am decending into maddeness
+<div id="bodytagger"> <p>I am decending into maddeness    <p>
   <div class="container">
   <img src="bboyblur.png" alt="Avatar" class="image">
   <div class="overlay">
     <div class="text">this is a banana</div>
-
-
+  </div>
+</div>
 </p>
+      <p> bananas are full of potassum <p>
+        <div class="zoom"></div>
 
 </div>
+
+
+
 </center>
 </body>
 
