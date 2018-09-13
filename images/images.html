@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+<title>IMAGES</title>
+
+<style>
+body {
+  background: linear-gradient(to left, #f09819, #edde5d);
+
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-image: linear-gradient(to left bottom, #f0d313, #c7ca01, #9ec005, #74b515, #46a823);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+* {
+    box-sizing: border-box;
+}
+
+
+.zoom {
+    padding: 50px;
+    background-image: url(peeledboy.jpg); object-fit: scale-down;
+    transition: transform .2s;
+    width: 300px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+}
+#secondmain{width:1000px; height:50px; background-color:skyblue;border-radius: 50px}
+#mainbox{width: 950px; height: 150px;background-image: url(bananas.png);border-radius:25px; font-size:30px; }
+#bodytagger{width:800px; height:1000px; background-image: url(bananas.png);border-radius: 15px 50px; margin-top:20px; border-style: dotted; border-color:pink; padding: inherit;}
+#bottomgallery{width:900px; height: 300px; background-image: radial-gradient(circle, #f0d313, #f0df47, #f1ea6a, #f3f58a, #f7ffa8);border-radius: 15px}
+#bottomimage1 { width:200px; height: 200px; background-image: url(nanagallery.jpg); object-fit: contain; float: right; padding: inherit;margin-right: 25px;}
+#bottomimage2 { width:200px; height: 200px; background-image: url(bananas.png); float: center; padding: inherit;margin-left: 25px;}
+#bottomimage3 { width:200px; height: 200px; background-image: url(bananas.png); float: left; padding: inherit; margin-left: 25px;}
+h1 {
+  margin-top:50px;
+  color:#DEB924}
+p{
+  color:violet;
+  font-family: 'Shadows Into Light', cursive;}
+</style>
+</head>
+<body>
+
+<center>
+<div id="mainbox"> <font face="verdana"> <H1>Banana Jammers
+
+
+ </H1>
+</div>
+<div id="secondmain">
+Bannnnana
+</div>
+</div>
+<div id="bodytagger"> <p>I am decending into maddeness    <p>
+  <div class="container">
+  <img src="bboyblur.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">this is a banana</div>
+  </div>
+</div>
+</p>
+      <p> bananas are full of potassum <p>
+        <div class="zoom"></div>
+
+</div>
+<div id="bottomgallery"><p> I actually hate bananas <p>
+  <div id= "bottomimage3" class:container>
+  </div>
+<div id= "bottomimage1" class:container>
+</div>
+<div id= "bottomimage2" class:container>
+</div>
+
+</div>
+
+
+
+</center>
+</body>
+
+
+</html>
