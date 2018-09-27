@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Media Queries Template</title>
+
+  <meta name="description" content="an experiment in creating different layouts and themes for different screen sizes">
+  <meta name="keywords" content="media query, layout, assignment">
+  <meta name="author" content="Ray Morgan">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- this viewport setting is important for responsive web design -->
+
+  <style>
+  body {
+    font-family: 'Roboto Slab', serif;
+    background-color:#934938;
+    width:80%;
+    max-width:1000px;
+    margin: 0 auto;
+  }
+
+#mainbox{max-width: 1000px; height: 150px;margin: 0 auto;background-image: url(moomoo.png);border-radius:25px; font-size:30px; }
+#secondheads{max-width:500px; height:100px; margin:0 auto; background-image: url(cowhide.png)}
+#navdivs{max-width:200px;height50px}
+@media screen and (min-width: 600px){
+background-color:pink
+ }
+ @media screen and (min-width: 1200px){
+   body {background-color:#934938 }
+
+  }
+
+}
+aside {float: left; width: 100vw;}
+.flex-container {
+    border-radius:20px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: pink;
+  margin:10px;
+}
+
+.flex-container > div {
+    border-radius:10px;
+  background-color: #f1f1f1;
+  max-width: 400px;
+  max-height:200px;
+  margin: 10px;
+
+  line-height: 10px;
+  font-size: 12px;
+
+}
+
+  </style>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+</head>
+
+<body>
+
+<center>
+  <header>
+    <div id= mainbox>
+<center>
+    <h1>Save Cows</h1>
+ </center>
+    </div>
+  </header>
+<div class="flex-container">
+    <ul>
+    <div><li><a href="#">Home</a></li></div>
+     <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
+  </ul>
+</div>
+
+<div>
+  <article>
+
+    <div class= seconmain>
+      <h1>Cows are Pretty Cute</h1>  </div>
+    <div class="flex-container">
+    <p> Just look at these guys. Cows are great. They are cute, silly, and have character. Cows make GREAT pets. They are just like large dogs. Plus Milk. and who doesn't like milk? </p>
+
+  </article>
+  <div class="flex-container">
+  <div><p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p></div>
+  <div><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum aliquam lectus id aliquam. Pellentesque sit amet mollis justo, .</p></div>
+<div>
+    <aside>
+<p> Milk comes in some awesome flavors like Strawberry and Chocolate!</p></div>
+</aside>
+<div class= "flex container"></div>
+
+<figure>
+  <aside>
+   <div>
+      <img src="milkcarton.png" alt="build strong bones" title="image" height="100px" width="100px">
+      <figcaption>Build Strong Bones!</figcaption></div>
+    </figure>
+
+   <p>Cows are an important resource to us! It is important to take care of them! </p>
+  </aside>
+<div class= "flex container">
+  <section>
+    <h1>Milk buids strong bones!</h1>
+    <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
+
+   <aside> <blockquote>
+      This is a blockquote in the middle of the section. You can style this however you want. You can probably also come up with better text than this boring explanation.
+    </blockquote>
+</aside>
+    <p>Sed turpis neque, gravida semper enim non, Sed sit amet elit eget dui imperdiet cursus at id ex. Fusce ornare in risus venenatis vestibulum. Donec vel quam eget ipsum ultricies dignissim et quis purus. Donec gravida luctus elit nec bibendum. Nulla facilisis metus condimentum neque faucibus efficitur. Fusce tempus rhoncus ipsum non commodo. Cras ullamcorper molestie placerat. Fusce at vehicula dui. Praesent rutrum ac ante auctor pellentesque. Nullam est tortor, consectetur id es </p>
+
+  </section>
+</div>
+</div>
+</center>
+  <footer>
+    <hr>
+    <p>
+      © MooMoo Products
+
+    </p>
+  </footer>
+
+
+
+</body></html>
