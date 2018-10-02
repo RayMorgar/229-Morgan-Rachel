@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Flexbox</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+  body {background: gray;}
+
+  section {background:pink; display: flex; margin:50px; min-width:200px; border-radius:50px; Padding:10px;box-shadow: 10px 10px;}
+  .flex-container1 {
+    padding: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    min-width:150px;
+    border-radius:20px;
+  }
+  .flex-container2 {
+    flex-direction: column;}
+.order1{order:1;}
+
+  div {background: skyblue; width:100px; border-radius:10px; padding:10px;}
+  .column {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    border-radius:20px;
+   }
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+  height:400px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+}
+#Lastbox {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#headertext {background:white; width: 450px;border-radius:20px; Padding:25px;box-shadow: 10px 10px; margin:25px;}
+  </style>
+</head>
+
+<body>
+  <header><center>
+    <h1>Flexbox Experiments</h1>
+
+  </header>
+  </center>
+  <center>
+  <h2>Here's The Head</h2>
+     <div id= "headertext"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in mauris tellus. Cras sit amet felis ultrices, iaculis magna a, tincidunt nunc. Quisque eleifend in nibh vel efficitur. Donec a maximus felis. Pellentesque vestibulum, massa ut interdum efficitur, diam nibh vestibulum ligula, eu ullamcorper quam ipsum id arcu.</p>
+      </div> </center>
+
+  <div class="column">
+  <section class="flex-container1">
+    <div>Heres the first Box, It has text in it.</div>
+    <div>here's 2, it also has text</div>
+    <div>I'm running out of ideas</div>
+    <div> And this is 4</div>
+
+  </section>
+  </div>
+
+<section class="flex-container4">
+    <div>Bubble</div>
+    <div>gum</div>
+    <div>snap</div>
+    <div>pop</div>
+  </section>
+<center>
+  <section class="flex-container5">
+
+
+    <div> <div style="max-width:500px;"></p>
+      <h2>Everything you own in the Box to the right</h2>
+      <p>I am unsure how to center this Div within the larger pink div. </p>
+    </div>
+    <div>
+
+
+    </div>
+    </center>
+    <div id="Lastbox">
+
+    <div>I'm first</div>
+    <div>2</div>
+    <div>3</div>
+    <div>But I'm last</div>
+  </div
+  <footer> <p>I am a Foot.</p></footer>
+
+</body>
+
+</html
