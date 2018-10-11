@@ -1,0 +1,195 @@
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Black Cats Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      background-image:url("vintage_speckles_@2X.png");
+      font-family: 'Amatic SC', cursive;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    .flex-container5 {
+      display: flex;
+      flex-wrap: wrap;
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+
+    .article {
+      flex: 100%;
+      background: #ccc;
+      padding: 2em;
+      box-sizing: border-box;
+      border-radius: 60px;
+    }
+
+    .siderbar {
+      flex: 100%;
+      background: #aaa;
+      padding: 2em;
+      box-sizing: border-box;
+      margin-top: 1%;
+      border-radius: 60px;
+      Max-width:300px;
+    }
+
+    .footer {
+      flex: 100%;
+      background: #888;
+      padding: 1em;
+      height:100px;
+      margin-top: 1%;
+      margin-bottom: 1%;
+      border-radius: 80px;
+    }
+
+    @media screen and (min-width: 1000px) {
+      .article {
+        flex: 69%;
+        margin-right: 1%;
+      }
+
+      .siderbar {
+        flex: 30%;
+        margin-top: 0;
+        Max-width:300px;
+      }
+
+    }
+    section {background:pink; display: flex; margin:50px; min-width:200px; max-width: 800px; border-radius:50px; Padding:10px;box-shadow: 10px 10px;}
+    .flex-container1 {
+      padding: 50px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: space-around;
+      min-width:150px;
+      border-radius:20px;
+    }
+    .flex-container2 {
+      flex-direction: column;}
+  .order1{order:1;}
+  div {width:100px; border-radius:10px; padding:10px;}
+  .column {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    border-radius:20px;
+   }
+   .flex-container9 {
+     display: flex;
+     flex-direction: column;
+     background-color: Skyblue;
+     margin:15px;
+   }
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+  height:400px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+}
+#Lastbox {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white;
+    margin:30px;
+}
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Black Cats are Great!</h1>
+  </header>
+  <center>
+
+
+  <section class="flex-container4">
+      <div>Bubble</div>
+      <div>gum</div>
+      <div>snap</div>
+      <div>pop</div>
+    </section>
+  </center>
+
+  <section class="flex-container5">
+    <div class="article">
+      <h2>Actually, Black Cats are the Best.</h2>
+      <p>Vim id brute aliquip urbanitas, quo brute ludus imperdiet id. Ius ne vocibus eligendi constituto, cu justo maluisset ius. Vis ex natum erant, et quo rebum posse argumentum. Quo aperiri bonorum quaestio at. Pro an viris adipisci scripserit,
+        an dicant theophrastus mea.</p>
+
+      <p>At cum minimum commune scriptorem. Decore volumus splendide te pri. Ne sea tale eius. Esse sanctus vim ad.</p>
+
+      <p>Nonumes corpora ius et. Eros illud epicurei sea id, duo cu inermis albucius. Probo nominavi conceptam at duo. Te vim nisl docendi. Eum ea quem splendide, tamquam perpetua accusamus eu sea. Vel elit dolorem tacimates cu, eu eligendi facilisi
+        indoctum est. Qui ea modo clita munere, ne rebum sapientem tincidunt cum.</p>
+
+      <p>Liber fabellas assueverit ut eos, tractatos partiendo an duo. Vis ad aeque oratio diceret. Molestiae democritum scriptorem nec in. Nec fugit dolorem ea, pro an etiam vituperatoribus, tempor probatus no eam. Ea has veri theophrastus, te
+        homero rationibus vel, assum apeirian ex vis. Ludus similique interesset ei per. Eros soleat omnesque vix an, appetere laboramus nec eu.</p>
+
+      <p>Feugait appareat est te, id ius prima appetere. Vim ad probo admodum perpetua, reque graece in vel. Maiorum instructior vix no, per veri apeirian ocurreret in, labitur facilisis eu his. Mel ne natum audiam, propriae mandamus ut quo.</p>
+    </div>
+
+    <div class="siderbar">
+      <h2>Look At this Spooky Baby</h2>
+      <img src="Takun.jpg" alt="Mah baby" width="200" height="300">
+    </div>
+<center>
+
+
+      <div class="column">
+      <section class="flex-container1">
+        <h2>Reasons to Love Black Cats</h2>
+        <div>1. They have attitude.</div>
+        <div>2. You can make any sweater Black.</div>
+        <div>3. They are Spooky.</div>
+        <div>4. Best Cat Asthetic.</div>
+
+      </section>
+      </div>
+      <div class="flex-container9">
+  <div>This is My Black Cat.</div>
+  <div>One of her Favorite Spots is the Cabints.</div>
+  <div>Don't be fooled by her. She is an asshole.</div>
+</div>
+
+</center>
+
+    <div class="footer">
+      <h2>Everyone should Adopt a Black Cat.</h2>
+      <p>This Page is Endorsed by Black Cats everywhere.</p>
+    </div>
+
+  </section>
+  <center>
+
+  <div id="Lastbox">
+
+<div>I'm first</div>
+<div>2</div>
+<div>3</div>
+<div>But I'm last</div>
+</div>
+
+</center>
+</body>
+
+</html>
