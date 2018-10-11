@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Rotation</title>
+</head>
+  <style>
+  body {
+    background-color: #7C7C7C
+  }
+
+}
+
+  }
+  html {
+  margin: 400px;
+  height: 1000%;
+}
+
+body {
+  margin:350px;
+  height: 200%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #ad5389, #3c1053);;
+  color: #ccc;
+}
+
+
+html::before,
+html::after,
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  top: -25vmin;
+  left: 0;
+  display: block;
+  width: .5vmin;
+  height: 6vmin;
+  border-radius: 50%;
+  color: transparent;
+}
+
+
+h1 {
+  margin: 0;
+  height: 12vmin;
+  width: 120vmin;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+h1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: -26vmin;
+  left: 29vmin;
+  width: 62vmin;
+  height: 62vmin;
+  border-radius: 50%;
+  border: 1.3vmin solid currentColor;
+  box-sizing: border-box;
+}
+
+em {
+  font-family: 'Josefin Sans', sans-serif;
+  color: currentColor;
+  font-size: 15vmin;
+  position: relative;
+  font-style: normal;
+  width: 20vmin;
+  text-align: center;
+}
+
+em.planet {
+  -webkit-animation: planet-rotate 4s linear infinite;
+  animation: planet-rotate 4s linear infinite;
+  position: relative;
+}
+
+em.planet::before {
+  content: "";
+  position: absolute;
+  top: -.5vmin;
+  left: 3.5vmin;
+  z-index: -1;
+  width: 13vmin;
+  height: 13vmin;
+  border-radius: 60%;
+  background: linear-gradient(to right, #fc5c7d, #6a82fb);;
+}
+
+em.planet.left {
+  -webkit-transform-origin: 40vmin 5vmin;
+  transform-origin: 40vmin 5vmin;
+}
+
+em.planet.right {
+  -webkit-transform-origin: -20vmin 5vmin;
+  transform-origin: -23vmin 5vmin;
+}
+
+@-webkit-keyframes planet-rotate {
+  to {
+    -webkit-transform: rotate(1turn);
+  }
+}
+
+@keyframes planet-rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}
+  </style>
+<body>
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+<h1>
+  <em>T</em>
+  <em class="planet left">R</em>
+  <em>E</em>
+  <em>K</em>
+  <em>K</em>
+  <em class="planet right">I</em>
+  <em>E</em>
+</h1>
+
+
+
+</body>
+</html>
