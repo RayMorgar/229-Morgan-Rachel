@@ -36,9 +36,8 @@
 
 <h2>Explorations</h2>
 <li> <a href= "exploration2.html">Exploration 2 </a></li>
-<li> <a href= "explorations/exploration3.html">Exploration 3</a></li>
 <h2>Projects</h2>
-<li> <a href= "project1GRID.html">Project One</a></li>
+
 <img src="steven.png" alt="Steven" width="500" height="333"/>
 </body>
 </html>

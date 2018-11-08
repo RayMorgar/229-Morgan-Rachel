@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+
+<head>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<title>Art</title>
+<style>
+body{
+  color: #ffffff;
+}
+.h1{
+  font-size: 100px;
+}
+.container {
+  display: grid;
+  width: 750px;
+  height: 1000px;
+  grid-template-columns: 250px .1fr 250fr;
+  grid-template-rows: 100px 2fr 2fr 200px;
+  grid-gap: 2rem;
+}
+.header {
+  grid-row: 1/ 2;
+  grid-column: 2 / 4;
+  min-width:420px;
+}
+.content-1 {
+  display: flex;
+ flex-wrap: wrap;
+  grid-row: 4/ 3;
+  grid-column:  1/ 4;
+  height:1000px;
+}
+
+.footer {
+  grid-row: 4 / 5;
+  grid-column: 1 / 4;
+  margin-top:125px;
+}
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+}
+#float4{
+position:absolute;
+-webkit-animation: floatBubble 10s infinite;
+    -webkit-animation-direction:alternate;
+    border-radius:50%;
+    margin-top:200px;
+    left:50px;
+    opacity:5%;
+
+
+
+
+    background: -webkit-linear-gradient(top, #ebf1f6 0%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%);
+
+  }
+
+
+@-webkit-keyframes floatBubble{
+ from{
+        top:0;
+        -webkit-animation-timing-function: ease-in;
+
+   }
+
+
+   to {
+      top: 1000px;
+      -webkit-animation-timing-function: ease-in;
+   }
+}
+#float5{
+position:absolute;
+-webkit-animation: floatBubble 5s infinite;
+    -webkit-animation-direction:alternate;
+    border-radius:50%;
+    margin-top:600px;
+    left:60px;
+    opacity:5%;
+
+
+
+
+    background: -webkit-linear-gradient(top, #ebf1f6 0%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%);
+
+  }
+
+
+@-webkit-keyframes floatBubble{
+ from{
+        top:0;
+        -webkit-animation-timing-function: ease-in;
+
+   }
+
+
+   to {
+      top: 1000px;
+      -webkit-animation-timing-function: ease-in;
+   }
+}
+</style>
+<body>
+<div class="container">
+  <div class="item header">History Of Mermaids</div>
+  <div class="item links">
+    <div class="buttons"><a href= "project1GRID.html"><i class="material-icons">home</i></a></li></div>
+    <div class="buttons"><a href= "Art.html">Art</a></li></div>
+    <div class="buttons"><a href= "Myths.html">Hoaxs & Myths</a></li></div>
+    <div class="buttons"><a href= "Myths.html">Pop Culutre</a></li></div>
+</div>
+<div><center><h1>Arts</h1></center></div>
+<div class="item content-1">
+<div id="Lastbox">
+<img src="russian.jpg" alt="Russian" width="225px" height="225px"padding="225px"></div>
+<div><img src="britishart.jpg" alt="brit" width="225px" height="225px"padding="225px"></div>
+<div><img src="mermaid-paintings-003.jpg" alt="Russian" width="225px" height="225px"padding="225px"></div>
+<div><img src="lilmermaid.jpg" alt="lilmermaid" width="225px" height="225px"padding="225px"></div>
+<div><img src="france.jpg" alt="france" width="225px" height="225px"padding="225px"></div>
+<div><img src="carnival.jpg" alt="carnival" width="225px" height="225px"padding="225px"></div>
+<div><img src="inkblock.jpg" alt="Russian" width="225px" height="225px"padding="225px"></div>
+<div><img src="chinese.jpg" alt="Russian" width="225px" height="225px"padding="225px"></div>
+<div><img src="Mtg.jpeg" alt="Russian" width="225px" height="225px"padding="225px"></div>
+</div>
+
+
+
+  <div class="item footer">Sources:http://mythology.wikia.com/wiki/Mermaid https://en.wikipedia.org/wiki/Mermaid https://ocean.si.edu/ocean-life/marine-mammals/mermaids-manatees-myth-and-reality</div>
+</div>
+<img id=float height="50px" width="50px" >
+<img id=float2 height="75px" width="75px">
+<img id=float3 height="25px" width="25px">
+<img id=float4 height="50px" width="50px">
+<img id=float5 height="20px" width="20px">
+</body>
