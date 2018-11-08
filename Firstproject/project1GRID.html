@@ -2,213 +2,237 @@
 <html>
 
 <head>
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-    <link href="StyleSheet.css" rel="stylesheet" type="text/css">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link href="StyleSheet.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
-<title>Mermaids History</title>
+  <title>Mermaids History</title>
 
-<style>
+  <style>
+    .container {
+      display: grid;
+      width: 750px;
+      height: 1000px;
+      grid-template-columns: 250px .1fr 250fr;
+      grid-template-rows: 100px 2fr 2fr 220px;
+      grid-gap: 1rem;
+    }
 
-.container {
-  display: grid;
-  width: 750px;
-  height: 1000px;
-  grid-template-columns: 250px .1fr 250fr;
-  grid-template-rows: 100px 2fr 2fr 220px;
-  grid-gap: 1rem;
-}
+    .header {
+      grid-row: 1/ 2;
+      grid-column: 2 / 4;
+      min-width: 420px;
+    }
 
-.header {
-  grid-row: 1/ 2;
-  grid-column: 2 / 4;
-  min-width:420px;
-}
+    .sidebar {
+      grid-row: 1 / 4;
+      grid-column: 1 / 2;
+    }
 
-.sidebar {
-  grid-row: 1 / 4;
-  grid-column: 1 / 2;
-}
-.links {
-  grid-row: 1 / 3;
-  grid-column: 1 / 2;
-  height:60px;
-  padding:10px;
-  display: flex;
-}
-.buttons {
-  height:25;
-  width:25;
-  Padding:10px;
-  border-radius: 25px;
-}
-.content-1 {
-  grid-row: 3/ 3;
-  grid-column:  1/ 4;
-  height:400px;
-}
+    .links {
+      grid-row: 1 / 3;
+      grid-column: 1 / 2;
+      height: 60px;
+      padding: 10px;
+      display: flex;
+    }
 
-.content-2 {
-  grid-row: 4 / 4;
-  grid-column: 1 / 3;
-}
+    .buttons {
+      height: 25;
+      width: 25;
+      Padding: 10px;
+      border-radius: 25px;
+    }
 
-.content-3 {
-  grid-row: 4 / 4;
-  grid-column: 3 / 4;
-}
+    .content-1 {
+      grid-row: 3/ 3;
+      grid-column: 1/ 4;
+      height: 400px;
+    }
 
-.footer {
-  grid-row: 5 / 5;
-  grid-column: 1 / 4;
-  margin-top:125px;
-}
-.zoom {
-    display:flex;
-    transition: transform .2s;
-}
-.zoom:hover {
-    transform: scale(3);
-    display:flex;
-}
-body {
-  padding: 20px;
-  font-family: 'EB Garamond', serif;
-  background: linear-gradient(to right, #8360c3, #2ebf91);;
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-}
+    .content-2 {
+      grid-row: 4 / 4;
+      grid-column: 1 / 3;
+    }
 
-.item {
-  background-image: linear-gradient(130deg, #6C52D9 0%, #1EAAFC 85%, #3EDFD7 100%);
-  color: #ffffff;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  font-size: 13px;
-  font-weight: bold;
-  padding:20px;
-}
+    .content-3 {
+      grid-row: 4 / 4;
+      grid-column: 3 / 4;
+    }
 
-.header {
-  font-size: 50px;
-}
-.footer {
-  font-size:10px
-;
-}
-#float4{
-position:absolute;
--webkit-animation: floatBubble 10s infinite;
-    -webkit-animation-direction:alternate;
-    border-radius:50%;
-    margin-top:200px;
-    left:50px;
-    opacity:5%;
+    .footer {
+      grid-row: 5 / 5;
+      grid-column: 1 / 4;
+      margin-top: 125px;
+    }
 
+    .zoom {
+      display: flex;
+      transition: transform .2s;
+    }
+
+    .zoom:hover {
+      transform: scale(3);
+      display: flex;
+    }
+
+    body {
+      padding: 20px;
+      font-family: 'EB Garamond', serif;
+      background: linear-gradient(to right, #8360c3, #2ebf91);
+      ;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .item {
+      background-image: linear-gradient(130deg, #6C52D9 0%, #1EAAFC 85%, #3EDFD7 100%);
+      color: #ffffff;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: bold;
+      padding: 20px;
+    }
+
+    .header {
+      font-size: 50px;
+    }
+
+    .footer {
+      font-size: 10px;
+    }
+
+    #float4 {
+      position: absolute;
+      -webkit-animation: floatBubble 10s infinite;
+      -webkit-animation-direction: alternate;
+      border-radius: 50%;
+      margin-top: 200px;
+      left: 50px;
+      opacity: 5%;
 
 
 
-    background: -webkit-linear-gradient(top, #ebf1f6 0%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%);
 
-  }
+      background: -webkit-linear-gradient(top, #ebf1f6 0%, #abd3ee 50%, #89c3eb 51%, #d5ebfb 100%);
+
+    }
 
 
-@-webkit-keyframes floatBubble{
- from{
-        top:0;
+    @-webkit-keyframes floatBubble {
+      from {
+        top: 0;
         -webkit-animation-timing-function: ease-in;
 
-   }
+      }
 
 
-   to {
-      top: 1000px;
-      -webkit-animation-timing-function: ease-in;
-   }
-}
-#float5{
-position:absolute;
--webkit-animation: floatBubble 5s infinite;
-    -webkit-animation-direction:alternate;
-    border-radius:50%;
-    margin-top:600px;
-    left:60px;
-    opacity:5%;
+      to {
+        top: 1000px;
+        -webkit-animation-timing-function: ease-in;
+      }
+    }
+
+    #float5 {
+      position: absolute;
+      -webkit-animation: floatBubble 5s infinite;
+      -webkit-animation-direction: alternate;
+      border-radius: 50%;
+      margin-top: 600px;
+      left: 60px;
+      opacity: 5%;
 
 
 
 
-    background: -webkit-linear-gradient(top, #ebf1f6 0%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%);
+      background: -webkit-linear-gradient(top, #ebf1f6 0%, #abd3ee 50%, #89c3eb 51%, #d5ebfb 100%);
 
-  }
+    }
 
 
-@-webkit-keyframes floatBubble{
- from{
-        top:0;
+    @-webkit-keyframes floatBubble {
+      from {
+        top: 0;
         -webkit-animation-timing-function: ease-in;
 
-   }
+      }
 
 
-   to {
-      top: 500px;
-      -webkit-animation-timing-function: ease-in;
-   }
-}
-</style>
+      to {
+        top: 500px;
+        -webkit-animation-timing-function: ease-in;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<div class="container">
-  <div class="item header">History Of Mermaids</div>
-  <div class="item links">
-    <div class="buttons"><a href= "project1GRID.html"><i class="material-icons">home</i></a></li></div>
-    <div class="buttons"><a href= "Art.html">Art</a></li></div>
-    <div class="buttons"><a href= "Myths.html">Hoaxs & Myths</a></li></div>
-    <div class="buttons"><a href= "Myths.html">Pop Culutre</a></li></div>
-</div>
-  <div class="item content-1"> <center>
+  <div class="container">
+    <div class="item header">History Of Mermaids</div>
+    <div class="item links">
+      <div class="buttons"><a href="project1GRID.html"><i class="material-icons">home</i></a></li>
+      </div>
+      <div class="buttons"><a href="Art.html">Art</a></li>
+      </div>
+      <div class="buttons"><a href="Myths.html">Hoaxs & Myths</a></li>
+      </div>
+      <div class="buttons"><a href="Myths.html">Pop Culutre</a></li>
+      </div>
+    </div>
+    <div class="item content-1">
+      <center>
 
-<h2>Where Did They come from?</h2>
-      <p>Merimaids have become a staple in fairytales and in our coffee, but it's safe to say we really don't know excatly where the legend came from. A common belief is that they first sighted by sailors, but we don't know if this is completely true and we can't pin point the stories to certain ships. </p>
+        <h2>Where Did They come from?</h2>
+        <p>Merimaids have become a staple in fairytales and in our coffee, but it's safe to say we really don't know excatly where the legend came from. A common belief is that they first sighted by sailors, but we don't know if this is completely true and
+          we can't pin point the stories to certain ships. </p>
 
-      <p>A common belief is that they just manatees, that were mistook for females (and who would want to admit the beautful women they though they saw was a manatee, c'mon?)</p>
+        <p>A common belief is that they just manatees, that were mistook for females (and who would want to admit the beautful women they though they saw was a manatee, c'mon?)</p>
 
-      <p>Many Legends come from medical anomalies, since when we don't understand something we try to understand it the best we can. One possibility is that a child was born with Sirenomelia or "mermaid syndrome" where they are born with their legs fused together, which looks very much like a fish tail. However, this may be unlikly as mortailitiy is very high for this syndorme, and  those born with this usually die within a few days of birth.  </p>
+        <p>Many Legends come from medical anomalies, since when we don't understand something we try to understand it the best we can. One possibility is that a child was born with Sirenomelia or "mermaid syndrome" where they are born with their legs fused
+          together, which looks very much like a fish tail. However, this may be unlikly as mortailitiy is very high for this syndorme, and those born with this usually die within a few days of birth. </p>
 
-      <p>It's so easy to get wrapped up in this legend being that is literally everywhere. Any Country boarding water has mermaid legends. And legends from one culutre can easily be spread by sailors and travelers sailing between ports. It's quite romantic. </p>
-      <p>Even in modern history, it's hard to not wonder what is hiding in the depths and we are more likely to believe hoaxs. A popular hoaxs almost to the 2000s was the 'mermaid skeleton' which was actually just a half a monkey sewn to half a fish. Then even in recent years Animal Planet released a faux documentary that was suppose to excite people to want to explore our under water world... However this made many people more upset with the network or trying to pass this off as true footage then anything else.</p>
-   </center>  </div>
-  <div class="item content-2"><center>
+        <p>It's so easy to get wrapped up in this legend being that is literally everywhere. Any Country boarding water has mermaid legends. And legends from one culutre can easily be spread by sailors and travelers sailing between ports. It's quite romantic.
+          </p>
+        <p>Even in modern history, it's hard to not wonder what is hiding in the depths and we are more likely to believe hoaxs. A popular hoaxs almost to the 2000s was the 'mermaid skeleton' which was actually just a half a monkey sewn to half a fish. Then
+          even in recent years Animal Planet released a faux documentary that was suppose to excite people to want to explore our under water world... However this made many people more upset with the network or trying to pass this off as true footage
+          then anything else.</p>
+      </center>
+    </div>
+    <div class="item content-2">
+      <center>
 
-<h2>Known sources of Myths</h2>
-  <p> Greece</p>
-  <p>British Isles</p>
-  <p>Europe</p>
-  <p>China</p>
-  <p>Africa</p>
-</div>
-  </center>
-<div class="item content-3">
-  <div class="zoom"><img src="russian.jpg" alt="Russian" width="150" height="150"></div>
-  <div class="zoom"><img src="Chinese.jpg" alt="Russian" width="150" height="150"></div>
-  <center><p>These two pieces are from very different culutres and yet they still both have this legend embedded in their cultures.</p>  </center>
+        <h2>Known sources of Myths</h2>
+        <p> Greece</p>
+        <p>British Isles</p>
+        <p>Europe</p>
+        <p>China</p>
+        <p>Africa</p>
+    </div>
+    </center>
+    <div class="item content-3">
+      <div class="zoom"><img src="russian.jpg" alt="Russian" width="150" height="150"></div>
+      <div class="zoom"><img src="Chinese.jpg" alt="Russian" width="150" height="150"></div>
+      <center>
+        <p>These two pieces are from very different culutres and yet they still both have this legend embedded in their cultures.</p>
+      </center>
 
     </div>
-  <div class="item footer">Sources:http://mythology.wikia.com/wiki/Mermaid https://en.wikipedia.org/wiki/Mermaid https://ocean.si.edu/ocean-life/marine-mammals/mermaids-manatees-myth-and-reality</div>
-</div>
-<img id=float height="50px" width="50px" >
-<img id=float2 height="75px" width="75px">
-<img id=float3 height="25px" width="25px">
-<img id=float4 height="50px" width="50px">
-<img id=float5 height="20px" width="20px">
+    <div class="item footer">Sources:http://mythology.wikia.com/wiki/Mermaid https://en.wikipedia.org/wiki/Mermaid https://ocean.si.edu/ocean-life/marine-mammals/mermaids-manatees-myth-and-reality</div>
+  </div>
+  <img id=float height="50px" width="50px">
+  <img id=float2 height="75px" width="75px">
+  <img id=float3 height="25px" width="25px">
+  <img id=float4 height="50px" width="50px">
+  <img id=float5 height="20px" width="20px">
 </body>
+
 </html>
