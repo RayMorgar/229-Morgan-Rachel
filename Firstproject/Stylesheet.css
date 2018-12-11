@@ -1,7 +1,8 @@
 < !DOCTYPE HTML><html><head><meta charset="UTF-8"><title>Embedded Style Sheet</title><style type="text/css">.header {
   grid-row: 1/ 2;
   grid-column: 2 / 4;
-  min-width: 420px;
+  min-width: 300px;
+  max-width: 200px;
 }
 
 .sidebar {
@@ -41,13 +42,14 @@
 }
 
 body {
-  padding: 20px;
+  padding: 40px;
   font-family: 'EB Garamond', serif;
   background: linear-gradient(to right, #8360c3, #2ebf91);
   ;
   display: flex;
   justify-content: center;
   padding: 10px;
+  font-size:25;
 }
 
 .item {
